@@ -2,7 +2,7 @@ package org.example;
 
 public class Player {
     String figureUser;
-    public void playGame(HardPlay hardPlay){
-        hardPlay.generateShowFigure(figureUser);
+    public void playGame(Play play){
+        play.generateShowFigure(figureUser);
     }
 }

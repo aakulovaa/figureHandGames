@@ -8,12 +8,11 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
         String figureUser = scanner.nextLine();
-        Play play = new RockPaperScissorsPlay();
-        play.generateShowFigure(figureUser);
-        //Player player = new Player();
-        HardPlay hardPlay = new PlayAdapter(play);
-        //player.playGame(hardPlay);
-        //System.out.println(figureUser);
-       // hardPlay.generateShowFigure(figureUser);
+        RockPaperScissorsPlay play = new RockPaperScissorsPlay();
+        Player player = new Player();
+        player.playGame(play);
+        VanTuTsumPlay vanTuTsumPlay = new VanTuTsumPlay();
+        Play secondPlay = new PlayAdapter(vanTuTsumPlay);
+        player.playGame(secondPlay);
     }
 }
