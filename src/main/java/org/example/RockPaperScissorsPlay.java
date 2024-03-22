@@ -10,11 +10,11 @@ public class RockPaperScissorsPlay implements Play {
 
     /**
      * Переопределение метода для игры в «камень-ножницы-бумага»
+     *
      * @param figureUser - название фигуры, полученной от пользователя
-     * @return - возвращает название сгенерированной фигуры
      */
     @Override
-    public String generateShowFigure(String figureUser) {
+    public void generateShowFigure(String figureUser) {
         String result = figure[(int) Math.round(Math.random() + 1)];
         switch (figureUser) {
             case "камень":
@@ -47,6 +47,5 @@ public class RockPaperScissorsPlay implements Play {
             default:
                 System.out.println("Ошибка ввода");
         }
-        return result;
     }
 }

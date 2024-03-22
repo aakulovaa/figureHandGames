@@ -10,11 +10,11 @@ public class VanTuTsumPlay implements HardPlay{
 
     /**
      * Переопределение метода для игры в "Ван-ту-цум"
+     *
      * @param figureUser - название фигуры, полученной от пользователя
-     * @return - возвращяет название сгенерированной фигуры
      */
     @Override
-    public String generateShowFigure(String figureUser){
+    public void generateShowFigure(String figureUser){
         String result = figure[(int)Math.round(Math.random()+1)];
         switch (figureUser) {
             case "камень":
@@ -85,6 +85,5 @@ public class VanTuTsumPlay implements HardPlay{
             default:
                 System.out.println("Ошибка ввода");
         }
-        return result;
     }
 }

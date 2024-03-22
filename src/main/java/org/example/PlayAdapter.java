@@ -10,8 +10,7 @@ public class PlayAdapter implements Play{
         this.vanTuTsumPlay = vanTuTsumPlay;
     }
     @Override
-    public String generateShowFigure(String figureUser){
+    public void generateShowFigure(String figureUser){
         vanTuTsumPlay.generateShowFigure(figureUser);
-        return figureUser;
     }
 }
