@@ -2,10 +2,19 @@ package org.example;
 
 import java.util.Objects;
 
+/**
+ * Класс, реализующий логику игры «Ван, ту, цум»
+ */
 public class VanTuTsumPlay implements HardPlay{
-    private String[] figure = {"птица", "камень", "пистолет", "стол", "вода"};
+    private final String[] figure = {"птица", "камень", "пистолет", "стол", "вода"};
+
+    /**
+     * Переопределение метода для игры в "Ван-ту-цум"
+     * @param figureUser - название фигуры, полученной от пользователя
+     * @return - возвращяет название сгенерированной фигуры
+     */
     @Override
-    public void generateShowFigure(String figureUser){
+    public String generateShowFigure(String figureUser){
         String result = figure[(int)Math.round(Math.random()+1)];
         switch (figureUser) {
             case "камень":
@@ -73,8 +82,9 @@ public class VanTuTsumPlay implements HardPlay{
                     System.out.println(result + "\nТы проиграл☹️");
                 }
                 break;
-
-
+            default:
+                System.out.println("Ошибка ввода");
         }
+        return result;
     }
 }
