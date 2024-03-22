@@ -7,7 +7,6 @@ public class PlayAdapter implements HardPlay{
         this.vanTuTsumPlay = vanTuTsumPlay;
     }
     @Override
-    public String generateShowFigure(){
-        return vanTuTsumPlay.generateShowFigure();
+    public void generateShowFigure(String figureUser){
     }
 }

@@ -1,5 +1,5 @@
 package org.example;
 
 public interface HardPlay {
-    String generateShowFigure();
+    void generateShowFigure(String figure);
 }

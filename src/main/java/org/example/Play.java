@@ -1,5 +1,5 @@
 package org.example;
 
 public interface Play {
-    String generateShowFigure();
+    void generateShowFigure(String figure);
 }
