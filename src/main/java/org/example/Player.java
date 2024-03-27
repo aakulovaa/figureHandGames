@@ -14,6 +14,7 @@ public class Player {
      * @param play - игра, подаваемая на вход
      */
     public void playGame(Play play){
-        play.generateShowFigure(figureUser);
+        //play.generateShowFigure(figureUser);
+        System.out.println(play.generateShowFigure(figureUser));
     }
 }

@@ -14,38 +14,52 @@ public class RockPaperScissorsPlay implements Play {
      * @param figureUser - название фигуры, полученной от пользователя
      */
     @Override
-    public void generateShowFigure(String figureUser) {
+    public String generateShowFigure(String figureUser) {
         String result = figure[(int) Math.round(Math.random() + 1)];
+        String outcomeOfGame = null;
         switch (figureUser) {
             case "камень":
                 if (Objects.equals(result, "камень")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "ножницы")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             case "ножницы":
                 if (Objects.equals(result, "ножницы")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "бумага")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             case "бумага":
                 if (Objects.equals(result, "бумага")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "камень")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             default:
                 System.out.println("Ошибка ввода");
         }
+        return outcomeOfGame;
     }
 }

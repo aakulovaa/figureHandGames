@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fadbd796-5c60-4cd0-be89-cd7767d36d30" name="Changes" comment="добавление комментариев для описания работы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HardPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HardPlay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PlayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PlayAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RockPaperScissorsPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RockPaperScissorsPlay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VanTuTsumPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VanTuTsumPlay.java" afterDir="false" />
     </list>
@@ -98,6 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.VanTuTsumPlayTest.generateShowFigure" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.VanTuTsumPlayTest.generateShowFigure" />
       </list>

@@ -14,76 +14,108 @@ public class VanTuTsumPlay implements HardPlay{
      * @param figureUser - название фигуры, полученной от пользователя
      */
     @Override
-    public void generateShowFigure(String figureUser){
+    public String generateShowFigure(String figureUser){
         String result = figure[(int)Math.round(Math.random()+1)];
+        String outcomeOfGame = null;
         switch (figureUser) {
             case "камень":
                 if (Objects.equals(result, "камень")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "птица")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else if (Objects.equals(result, "стол")) {
-                System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                //System.out.println(result + "\nТы победил🏆");
                 }else if (Objects.equals(result, "пистолет")) {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             case "птица":
                 if (Objects.equals(result, "птица")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "вода")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else if (Objects.equals(result, "камень")) {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }else if (Objects.equals(result, "пистолет")) {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             case "пистолет":
                 if (Objects.equals(result, "пистолет")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "камень")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else if (Objects.equals(result, "птица")) {
-                    System.out.println(result + "\nТы победил🏆️");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆️");
                 }else if (Objects.equals(result, "стол")) {
-                    System.out.println(result + "\nТы победил🏆️");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆️");
                 }else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             case "стол":
                 if (Objects.equals(result, "стол")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "птица")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 } else if (Objects.equals(result, "вода")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 }else if (Objects.equals(result, "пистолет")) {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             case "вода":
                 if (Objects.equals(result, "вода")) {
-                    System.out.println(result + "\nНичья🤝");
+                    outcomeOfGame = "Ничья🤝";
+                    //System.out.println(result + "\nНичья🤝");
                 } else if (Objects.equals(result, "птица")) {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 } else if (Objects.equals(result, "камень")) {
-                    System.out.println(result + "\nТы победил🏆");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆");
                 }else if (Objects.equals(result, "пистолет")) {
-                    System.out.println(result + "\nТы победил🏆️");
+                    outcomeOfGame = "Ты победил🏆";
+                    //System.out.println(result + "\nТы победил🏆️");
                 }else {
-                    System.out.println(result + "\nТы проиграл☹️");
+                    outcomeOfGame = "Ты проиграл☹️";
+                    //System.out.println(result + "\nТы проиграл☹️");
                 }
+                System.out.println(result);
                 break;
             default:
                 System.out.println("Ошибка ввода");
         }
+        return outcomeOfGame;
     }
 }
