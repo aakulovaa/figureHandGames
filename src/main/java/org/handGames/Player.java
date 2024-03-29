@@ -1,5 +1,7 @@
 package org.handGames;
 
+import org.figureHandGames.StandartGame;
+
 import java.util.Scanner;
 
 /**
@@ -13,7 +15,7 @@ public class Player {
      * Метод для игры пользователя с программой
      * @param play - игра, подаваемая на вход
      */
-    public void playGame(Play play){
-        System.out.println(play.generateShowFigure(figureUser));
+    public void playGame(StandartGame play){
+        System.out.println(play.showFigureForRPS(figureUser));
     }
 }
