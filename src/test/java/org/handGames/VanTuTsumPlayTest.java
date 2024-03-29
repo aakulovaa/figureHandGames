@@ -1,4 +1,4 @@
-package org.example;
+package org.handGames;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,12 +6,12 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RockPaperScissorsPlayTest {
+class VanTuTsumPlayTest {
 
     @Test
     void generateShowFigure() {
-        RockPaperScissorsPlay play = new RockPaperScissorsPlay();
-        String result = play.generateShowFigure("камень");
+        VanTuTsumPlay vanTuTsumPlay = new VanTuTsumPlay();
+        String result = vanTuTsumPlay.generateShowFigure("вода");
         String[] extended = {"Ничья🤝", "Ты победил🏆", "Ты проиграл☹️"};
         assertTrue(Arrays.asList(extended).contains(result));
     }

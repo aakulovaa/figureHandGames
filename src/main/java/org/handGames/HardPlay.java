@@ -1,4 +1,4 @@
-package org.example;
+package org.handGames;
 
 /**
  * Интерфейс для игры в «Ван, ту, цум».

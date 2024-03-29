@@ -1,4 +1,4 @@
-package org.example;
+package org.handGames;
 
 /**
  * Класс Адаптер игры «камень-ножницы-бумага» к игре «Ван, ту, цум»

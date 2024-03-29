@@ -1,4 +1,4 @@
-package org.example;
+package org.handGames;
 
 import java.util.Objects;
 
