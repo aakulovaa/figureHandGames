@@ -2,11 +2,17 @@ package org.figureHandGames;
 
 import java.util.Objects;
 
-public class JanKenPonPlay implements SingaporeGame {
+/**
+ * Класс, реализующий логику игры «камень-птица-вода»
+ *
+ * @author Ann Akulova
+ */
+public class JanKenPonPlay implements OtherGame {
     private final String[] figure = {"камень", "птица", "вода"};
 
     /**
-     * Переопределение метода для игры в «камень-ножницы-бумага»
+     * Переопределение метода для игры в «камень-птица-вода»
+     *
      * @param figureUser - название фигуры, полученной от пользователя
      * @return - возвращает исход игры
      */
@@ -33,6 +39,12 @@ public class JanKenPonPlay implements SingaporeGame {
         return outcomeOfGame;
     }
 
+    /**
+     * Метод для определения исхода игры в случае выпадения камня
+     *
+     * @param figureCode - сгенерированная фигура
+     * @return - возвращает исход игры в случае выпадения камня
+     */
     @Override
     public String rockOutcome(String figureCode) {
         String outcomeForRock = null;
@@ -46,6 +58,12 @@ public class JanKenPonPlay implements SingaporeGame {
         return outcomeForRock;
     }
 
+    /**
+     * Метод для определения исхода игры в случае выпадения птицы
+     *
+     * @param figureCode - сгенерированная фигура
+     * @return - возвращает исход игры в случае выпадения птицы
+     */
     @Override
     public String birdOutcome(String figureCode) {
         String outcomeForBird = null;
@@ -59,6 +77,12 @@ public class JanKenPonPlay implements SingaporeGame {
         return outcomeForBird;
     }
 
+    /**
+     * Метод для определения исхода игры в случае выпадения воды
+     *
+     * @param figureCode - сгенерированная фигура
+     * @return - возвращает исход игры в случае выпадения воды
+     */
     @Override
     public String waterOutcome(String figureCode) {
         String outcomeForWater = null;

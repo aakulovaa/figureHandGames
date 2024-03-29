@@ -2,8 +2,20 @@ package org.figureHandGames;
 
 import java.util.Objects;
 
-public class RPSPlay implements StandartGame{
+/**
+ * Класс, реализующий логику игры «камень-ножницы-бумага»
+ *
+ * @author Ann Akulova
+ */
+public class RPSPlay implements StandartGame {
     private final String[] figure = {"камень", "ножницы", "бумага"};
+
+    /**
+     * Переопределение метода для игры в «камень-ножницы-бумага»
+     *
+     * @param figureUser - название фигуры, полученной от пользователя
+     * @return - возвращает исход игры
+     */
     @Override
     public String showFigureForRPS(String figureUser) {
         String result = figure[(int) Math.round(Math.random() + 1)];
@@ -27,6 +39,12 @@ public class RPSPlay implements StandartGame{
         return outcomeOfGame;
     }
 
+    /**
+     * Метод для определения исхода игры в случае выпадения камня
+     *
+     * @param codeFigure - сгенерированная фигура
+     * @return - возвращает исход игры в случае выпадения камня
+     */
     @Override
     public String rockOutcome(String codeFigure) {
         String rockOutcome = null;
@@ -40,6 +58,12 @@ public class RPSPlay implements StandartGame{
         return rockOutcome;
     }
 
+    /**
+     * Метод для определения исхода игры в случае выпадения ножниц
+     *
+     * @param codeFigure - сгенерированная фигура
+     * @return - возвращает исход игры в случае выпадения ножниц
+     */
     @Override
     public String scissorsOutcome(String codeFigure) {
         String scissorsOutcome = null;
@@ -53,6 +77,12 @@ public class RPSPlay implements StandartGame{
         return scissorsOutcome;
     }
 
+    /**
+     * Метод для определения исхода игры в случае выпадения бумаги
+     *
+     * @param codeFigure - сгенерированная фигура
+     * @return - возвращает исход игры в случае выпадения бумаги
+     */
     @Override
     public String paperOutcome(String codeFigure) {
         String paperOutcome = null;

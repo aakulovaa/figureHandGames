@@ -1,4 +1,4 @@
-package org.handGames;
+package org.figureHandGames;
 
 import org.figureHandGames.RPSPlay;
 import org.figureHandGames.StandartGame;

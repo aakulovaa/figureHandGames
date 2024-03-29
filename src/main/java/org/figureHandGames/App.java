@@ -1,10 +1,5 @@
-package org.handGames;
+package org.figureHandGames;
 
-
-import org.figureHandGames.GameAdapter;
-import org.figureHandGames.JanKenPonPlay;
-import org.figureHandGames.RPSPlay;
-import org.figureHandGames.StandartGame;
 
 public class App
 {
@@ -12,7 +7,7 @@ public class App
     {
         System.out.println("Введите фигуру");
         //RockPaperScissorsPlay play = new RockPaperScissorsPlay();
-//        Player player = new Player();
+        //Player player = new Player();
         //player.playGame(play);
         //VanTuTsumPlay vanTuTsumPlay = new VanTuTsumPlay();
         //Play secondPlay = new PlayAdapter(vanTuTsumPlay);
