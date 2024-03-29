@@ -47,7 +47,7 @@ public class JanKenPonPlay implements OtherGame {
      */
     @Override
     public String rockOutcome(String figureCode) {
-        String outcomeForRock = null;
+        String outcomeForRock;
         if (Objects.equals(figureCode, "камень")) {
             outcomeForRock = "Ничья🤝";
         } else if (Objects.equals(figureCode, "птица")) {
@@ -66,7 +66,7 @@ public class JanKenPonPlay implements OtherGame {
      */
     @Override
     public String birdOutcome(String figureCode) {
-        String outcomeForBird = null;
+        String outcomeForBird;
         if (Objects.equals(figureCode, "птица")) {
             outcomeForBird = "Ничья🤝";
         } else if (Objects.equals(figureCode, "вода")) {
@@ -85,7 +85,7 @@ public class JanKenPonPlay implements OtherGame {
      */
     @Override
     public String waterOutcome(String figureCode) {
-        String outcomeForWater = null;
+        String outcomeForWater;
         if (Objects.equals(figureCode, "вода")) {
             outcomeForWater = "Ничья🤝";
         } else if (Objects.equals(figureCode, "камень")) {

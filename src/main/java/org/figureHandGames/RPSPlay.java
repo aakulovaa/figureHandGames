@@ -47,7 +47,7 @@ public class RPSPlay implements StandartGame {
      */
     @Override
     public String rockOutcome(String codeFigure) {
-        String rockOutcome = null;
+        String rockOutcome;
         if (Objects.equals(codeFigure, "камень")) {
             rockOutcome = "Ничья🤝";
         } else if (Objects.equals(codeFigure, "ножницы")) {
@@ -66,7 +66,7 @@ public class RPSPlay implements StandartGame {
      */
     @Override
     public String scissorsOutcome(String codeFigure) {
-        String scissorsOutcome = null;
+        String scissorsOutcome;
         if (Objects.equals(codeFigure, "ножницы")) {
             scissorsOutcome = "Ничья🤝";
         } else if (Objects.equals(codeFigure, "бумага")) {
@@ -85,7 +85,7 @@ public class RPSPlay implements StandartGame {
      */
     @Override
     public String paperOutcome(String codeFigure) {
-        String paperOutcome = null;
+        String paperOutcome;
         if (Objects.equals(codeFigure, "бумага")) {
             paperOutcome = "Ничья🤝";
         } else if (Objects.equals(codeFigure, "камень")) {

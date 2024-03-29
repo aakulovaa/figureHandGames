@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fadbd796-5c60-4cd0-be89-cd7767d36d30" name="Changes" comment="добавление комментариев для описания работы">
+    <list default="true" id="fadbd796-5c60-4cd0-be89-cd7767d36d30" name="Changes" comment="добавление javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/figureHandGames/RPSPlayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/figureHandGames/RPSPlayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="second" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,35 +39,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VanTuTsumPlayTest.generateShowFigure.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;second&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.GameAdapterTest.showFigureForRPS.executor": "Run",
+    "JUnit.JanKenPonPlayTest.executor": "Run",
+    "JUnit.JanKenPonPlayTest.rockOutcome.executor": "Run",
+    "JUnit.JanKenPonPlayTest.showFigureForJKP.executor": "Run",
+    "JUnit.RPSPlayTest.paperOutcome.executor": "Run",
+    "JUnit.RPSPlayTest.rockOutcome.executor": "Run",
+    "JUnit.RPSPlayTest.scissorsOutcome.executor": "Run",
+    "JUnit.RPSPlayTest.showFigureForRPS.executor": "Run",
+    "JUnit.VanTuTsumPlayTest.generateShowFigure.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "third",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.figureHandGames" />
       <recent name="org.example" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <option name="MAIN_CLASS_NAME" value="org.figureHandGames.App" />
       <module name="game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.figureHandGames.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,18 +84,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VanTuTsumPlayTest.generateShowFigure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameAdapterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.figureHandGames.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.VanTuTsumPlayTest" />
-      <option name="METHOD_NAME" value="generateShowFigure" />
+      <option name="PACKAGE_NAME" value="org.figureHandGames" />
+      <option name="MAIN_CLASS_NAME" value="org.figureHandGames.GameAdapterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameAdapterTest.rockOutcome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.figureHandGames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.figureHandGames" />
+      <option name="MAIN_CLASS_NAME" value="org.figureHandGames.GameAdapterTest" />
+      <option name="METHOD_NAME" value="rockOutcome" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameAdapterTest.showFigureForRPS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.figureHandGames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.figureHandGames" />
+      <option name="MAIN_CLASS_NAME" value="org.figureHandGames.GameAdapterTest" />
+      <option name="METHOD_NAME" value="showFigureForRPS" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JanKenPonPlayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.figureHandGames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.figureHandGames" />
+      <option name="MAIN_CLASS_NAME" value="org.figureHandGames.JanKenPonPlayTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,9 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.VanTuTsumPlayTest.generateShowFigure" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.VanTuTsumPlayTest.generateShowFigure" />
+        <item itemvalue="JUnit.GameAdapterTest" />
+        <item itemvalue="JUnit.GameAdapterTest.rockOutcome" />
+        <item itemvalue="JUnit.GameAdapterTest.showFigureForRPS" />
+        <item itemvalue="JUnit.JanKenPonPlayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -156,8 +212,51 @@
       <option name="project" value="LOCAL" />
       <updated>1711106158132</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="изменение названия хранения">
+      <option name="closed" value="true" />
+      <created>1711726028224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711726028224</updated>
+    </task>
+    <task id="LOCAL-00007" summary="изменение логики игры, добавление новой">
+      <option name="closed" value="true" />
+      <created>1711738452231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711738452231</updated>
+    </task>
+    <task id="LOCAL-00008" summary="изменение логики игры">
+      <option name="closed" value="true" />
+      <created>1711739646142</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711739646142</updated>
+    </task>
+    <task id="LOCAL-00009" summary="добавление javadoc">
+      <option name="closed" value="true" />
+      <created>1711741004575</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711741004575</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="организация логики игры" />
@@ -165,6 +264,10 @@
     <MESSAGE value="редактирование логики игры" />
     <MESSAGE value="добавление правил, которым подчиняются игры" />
     <MESSAGE value="добавление комментариев для описания работы" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление комментариев для описания работы" />
+    <MESSAGE value="изменение названия хранения" />
+    <MESSAGE value="изменение логики игры, добавление новой" />
+    <MESSAGE value="изменение логики игры" />
+    <MESSAGE value="добавление javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление javadoc" />
   </component>
 </project>

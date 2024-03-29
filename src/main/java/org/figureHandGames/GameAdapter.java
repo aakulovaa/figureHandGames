@@ -4,7 +4,7 @@ package org.figureHandGames;
  * Класс Адаптер игры «камень-ножницы-бумага» к игре «камень-птица-вода»
  */
 public class GameAdapter implements StandartGame {
-    private OtherGame jkpPlay;
+    private final OtherGame jkpPlay;
     private final String[] figure = {"камень", "птица", "вода"};
 
     public GameAdapter(OtherGame jkpPlay) {
@@ -15,12 +15,12 @@ public class GameAdapter implements StandartGame {
      * Переопределение метода для игры в «камень-птица-вода» из «камень-ножницы-бумага»
      *
      * @param figureUser - название фигуры, полученной от пользователя
-     * @return
+     * @return - возвращиет исход игры
      */
     @Override
     public String showFigureForRPS(String figureUser) {
         String result = figure[(int) Math.round(Math.random() + 1)];
-        String outcomeOfGame = null;
+        String outcomeOfGame;
         switch (figureUser) {
             case "камень":
                 outcomeOfGame = rockOutcome(result);
@@ -55,7 +55,7 @@ public class GameAdapter implements StandartGame {
      * Метод для определения исхода игры в случае выпадения птицы
      *
      * @param codeFigure - сгенерированная фигура
-     * @return
+     * @return - возвращает иисход игры в случае выпадения птицы
      */
     @Override
     public String scissorsOutcome(String codeFigure) {

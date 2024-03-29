@@ -1,6 +1,5 @@
 package org.figureHandGames;
 
-import org.handGames.RockPaperScissorsPlay;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
