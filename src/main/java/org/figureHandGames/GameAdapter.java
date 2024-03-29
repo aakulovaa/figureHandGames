@@ -2,6 +2,7 @@ package org.figureHandGames;
 
 public class GameAdapter implements StandartGame{
     private SingaporeGame jkpPlay;
+    private final String[] figure = {"камень", "птица", "вода"};
 
     public GameAdapter(SingaporeGame jkpPlay) {
         this.jkpPlay = jkpPlay;
@@ -9,8 +10,26 @@ public class GameAdapter implements StandartGame{
 
 
     @Override
-    public String showFigureForRPS(String figure) {
-        return jkpPlay.showFigureForJKP(figure);
+    public String showFigureForRPS(String figureUser) {
+        String result = figure[(int) Math.round(Math.random() + 1)];
+        String outcomeOfGame = null;
+        switch (figureUser) {
+            case "камень":
+                outcomeOfGame = rockOutcome(result);
+                System.out.println(result);
+                break;
+            case "ножницы":
+                outcomeOfGame = scissorsOutcome(result);
+                System.out.println(result);
+                break;
+            case "бумага":
+                outcomeOfGame = paperOutcome(result);
+                System.out.println(result);
+                break;
+            default:
+                outcomeOfGame = jkpPlay.showFigureForJKP(figureUser);
+        }
+        return outcomeOfGame;
     }
 
     @Override

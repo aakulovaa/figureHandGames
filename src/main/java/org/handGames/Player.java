@@ -1,5 +1,6 @@
 package org.handGames;
 
+import org.figureHandGames.RPSPlay;
 import org.figureHandGames.StandartGame;
 
 import java.util.Scanner;
